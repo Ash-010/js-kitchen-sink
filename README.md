@@ -1,2 +1,2 @@
 # js-kitchen-sink
-A place for all the experiments in core JavaScript I want to test.
+A place for all the experiments and concepts in core JavaScript I want to test.

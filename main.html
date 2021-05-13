@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="main.js"></script> Adding the script before the actual HTML code without 
+        "defer" attribute would result in an error as there is no DOM to work with as the JS code
+         would be loaded before the html  -->
+    <script src="main.js" defer></script>
+    <!-- Using defer attribute in layman terms would instruct the compiler to keep loading the html
+         along with this script(different threads) but not parse it until html page is completely rendered(DOMContentLoaded event is fired) -->
+    <script async src="main.js"></script>
+    <!-- The async attribute tells the browser to load the script on a different thread(asynchronously)
+         but keep in mind that in case of multiple scripts it should only be used if there are no dependencies amon them -->
+  </head>
+  <body>
+    <h1></h1>
+  </body>
+</html>
